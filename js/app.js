@@ -1,10 +1,16 @@
 
 
 const url = window.location.href;
-const serviceWorkerLocation = '/pwa-basic-twittor-/sw.js'
+var serviceWorkerLocation = '/pwa-basic-twittor-/sw.js'
+
+
+console.log('jkashdsakdhkasdhkk')
 
 if(navigator.serviceWorker){
+    console.log({url})
     url.includes('localhost') ? (serviceWorkerLocation = '/sw.js') : null
+    console.log({serviceWorkerLocation})
+
     navigator.serviceWorker.register(serviceWorkerLocation)
 }
 
