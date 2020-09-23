@@ -1,7 +1,7 @@
 
 
 const url = window.location.href;
-const serviceWorkerLocation = '/pwa-basic-twittor-'
+const serviceWorkerLocation = '/pwa-basic-twittor-/sw.js'
 
 if(navigator.serviceWorker){
     url.includes('localhost') ? (serviceWorkerLocation = '/sw.js') : null
